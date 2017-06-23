@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    card_view:cardCornerRadius="4dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/news_layout">
+
+
+        <ImageView
+            android:contentDescription="@string/image_description"
+            android:id="@+id/info_image"
+            android:layout_width="96dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            tools:text="Killer Whale on the loose"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_toRightOf="@+id/info_image"
+            android:layout_toEndOf="@+id/info_image"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="16dp"
+            android:id="@+id/info_section"
+            tools:text="World News"
+            android:includeFontPadding="true"
+            android:layout_alignLeft="@+id/info_image"
+            android:layout_alignStart="@+id/info_image"
+            android:layout_below="@+id/info_image"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:id="@+id/info_date"
+            tools:text="Published on 19/6/2017"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/info_section"
+            android:layout_alignLeft="@+id/info_section"
+            android:layout_alignStart="@+id/info_section"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginEnd="8dp"/>
+    </RelativeLayout>
+    
+</android.support.v7.widget.CardView>
